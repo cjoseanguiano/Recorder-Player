@@ -32,19 +32,29 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
 //                    PlaybackFragment playbackFragment = new PlaybackFragment().newInstance(getItem(holder.getPosition()));
+
+                    /*
                     String a = "/storage/emulated/0/SoundRecorder/Mi grabación_3.mp4";
                     File file = new File(a);
-
                     RecordingItem recordingItem = new RecordingItem();
                     recordingItem.setFilePath(a);
                     recordingItem.setLength(56816);
-                    recordingItem.setName("Mi grabacion_3.mp4");
-//                   recordingItem.setTime(1508383369790);
+                    recordingItem.setName("Mi grabacion_2.mp4");
                     recordingItem.setTime(1508383369);
-                    recordingItem.setId(3);
+                    recordingItem.setId(3);*/
 
 
-//                    PlaybackFragment playbackFragment = new PlaybackFragment().newInstance(getItem(holder.getPosition()));
+                    String a = "/storage/emulated/0/SoundRecorder/Mi grabación_2.mp4";
+                    File file = new File(a);
+                    RecordingItem recordingItem = new RecordingItem();
+                    recordingItem.setFilePath(a);
+                    recordingItem.setId(4);
+                    recordingItem.setLength(9405);
+                    recordingItem.setName("Mi grabacion_2.mp4");
+//                    recordingItem.setTime(1508426956191);
+                    recordingItem.setTime(1508426956);
+
+
                     PlaybackFragment playbackFragment = new PlaybackFragment().newInstance(recordingItem);
 
                     FragmentTransaction transaction = MainActivity.this
